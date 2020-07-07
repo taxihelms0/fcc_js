@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <script>
+            /* Javascript goes here! */
+            // Only change code below this line
+            function countdown(n){
+            if (n < 1) {
+                return [];
+            } else {
+                const countArray = countdown(n-1);
+                countArray.unshift(n);
+                return countArray
+            }
+            }
+            console.log(countdown(12));
+            // Only change code above this line
+
+            /*************************/
+        </script>
+    </body>
+</html>
